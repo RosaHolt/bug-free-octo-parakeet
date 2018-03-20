@@ -54,11 +54,12 @@ ul#navmenu a {
     text-decoration: none;
     display: block;
     width: 200px;
-    height: 30px;
-    line-height: 25px;
+    height: 22px;
+    line-height: 22px;
     background-color: white;
     border: 1px solid grey;
     color: grey;
+    margin-top: 6px;
     
     
 }
@@ -129,4 +130,4 @@ footer
     margin-top: -291px;
     border-bottom: 4px solid black;
 }
-  
+
