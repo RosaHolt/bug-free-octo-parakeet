@@ -1,0 +1,14 @@
+/Users/apple/Projects/A22/A22/bin/A22.dll
+/Users/apple/Projects/A22/A22/bin/A22.pdb
+/Users/apple/Projects/A22/A22/bin/Newtonsoft.Json.dll
+/Users/apple/Projects/A22/A22/bin/System.Net.Http.Formatting.dll
+/Users/apple/Projects/A22/A22/bin/System.Web.Http.dll
+/Users/apple/Projects/A22/A22/bin/System.Web.Http.WebHost.dll
+/Users/apple/Projects/A22/A22/bin/System.Net.Http.Formatting.xml
+/Users/apple/Projects/A22/A22/bin/System.Web.Http.xml
+/Users/apple/Projects/A22/A22/bin/System.Web.Http.WebHost.xml
+/Users/apple/Projects/A22/A22/bin/Newtonsoft.Json.xml
+/Users/apple/Projects/A22/A22/obj/Debug/A22.csprojResolveAssemblyReference.cache
+/Users/apple/Projects/A22/A22/obj/Debug/A22.csproj.CoreCompileInputs.cache
+/Users/apple/Projects/A22/A22/obj/Debug/A22.dll
+/Users/apple/Projects/A22/A22/obj/Debug/A22.pdb
