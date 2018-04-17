@@ -49,6 +49,7 @@
     <Content Include="Web.config" />
     <Content Include="Default.aspx" />
     <Content Include="packages.config" />
+    <Content Include="_64.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">

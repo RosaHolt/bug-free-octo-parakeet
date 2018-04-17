@@ -186,12 +186,12 @@ asp #lblmessage{
         </nav>-->
 
         <h1> Train Service</h1>
-        <form id="trainselect" runat="server" method="post" action="Default.aspx"> 
+        <form id="trainselect" runat="server" method="post" action="_64.aspx"> 
         Choose Train:
         <select name="Choice" class="selectpicker"> 
-        <optgroup label="InterCityTrain">
+    
                         
-                        <%
+             <%
             StringWriter writer = new StringWriter();
             WebRequest myRequest = WebRequest.Create(@"https://rata.digitraffic.fi/api/v1/live-trains");
             WebResponse response = myRequest.GetResponse();
@@ -208,48 +208,45 @@ asp #lblmessage{
                             }
                         }
             List<string> trainNum = new List<string>();
+            List<string> timeTable = new List<string>();
             for (int i=1; i< trainNumcut.Count; i++)
             {
                 int index1 = trainNumcut[i].IndexOf("trainNumber")+13;
                 int take = trainNumcut[i].IndexOf(",",index1)-index1;
                 string trainNumber = trainNumcut[i].Substring(index1,take);
                 trainNum.Add(trainNumber);
+                int index2 = trainNumcut[i].IndexOf("stationShortCode")+19;
+                int take2 = trainNumcut[i].IndexOf(",",index2)-index2;
+                string stationCode = trainNumcut[i].Substring(index2,take2);
+                //timeTable.Add(stationCode);
+                int index3 = trainNumcut[i].IndexOf("scheduledTime")+16;
+                int take3 = trainNumcut[i].IndexOf(",",index3)-index3;
+                string time = trainNumcut[i].Substring(index3,take3);
+                timeTable.Add(stationCode+", " +time);
         
             }
                            for(int i=0; i< trainNum.Count; i++)
                             {
                                 Response.Write("<option value=\""+trainNum[i]+ "\">"+trainNum[i]+"</option>");
+                        /*
+                                if (label.Value) == "trainNum[i]"
+                                {
+                                    Response.Wrtie("+timeTable[i]+");
+                                }
+                        */
+                                
                             }
-                        %>
+               %>
                  <!--
                 <option value="IC9">IC 9</option> 
                 <option value="IC14">IC 14</option>
                 <option value="IC176">IC 176</option>
                         -->
-        </optgroup>
-        <optgroup label="CommuterTrain">
-             <option>Commuter Train Z</option>
-             <option>Commuter Train Y </option>
-             <option>Commuter Train 1</option>
-        </optgroup>          
+        
+              
         </select> 
 
 		
-				<div class="formgroup">
-					<label id="Trainstart" class="col-sm-2 control-label">Start </label>
-                    <div class="col-sm-3">
-                        <input id="Trainstart" name="Trainstart" value="<% =Convert.ToDateTime(Request.Form["Trainstart"]).ToShortTimeString()%> " type="text">
-					</div>
-        
-                </div>
-
-				<div class="formgroup">
-                    <label id="Trainend" class="col-sm-2 control-label">End </label>
-                    <div class="col-sm-3">
-                        <input id="Trainend" name="Trainend" value="<% =Convert.ToDateTime(Request.Form["Trainend"]).ToShortTimeString()%>"type="text" >
-                    </div>
-        
-                </div>
 				
 				<div class="formgroup">
 					<div class="col-md-offset-2 col-mdn-10">
