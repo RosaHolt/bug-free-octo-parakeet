@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" Inherits="A22.Default" %>
+<%@ Page Language="C#" Inherits="A22.Default" %>
 <!DOCTYPE html> 
 <%@ Import Namespace="System.IO" %>
 <%@ Import Namespace="System.Net" %>
@@ -19,7 +19,7 @@
     
     margin: 0;
     padding: 0;
-    background-image: url("https://cdn.pixabay.com/photo/2017/06/13/13/51/white-2398946_960_720.jpg");
+    background-image: url(https://images.unsplash.com/photo-1506818144585-74b29c980d4b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6fcc448f1c3bf2c4fac6ae51ae7b981c&auto=format&fit=crop&w=1350&q=80);
     background-size: cover;
     font-family: sans-serif;
     
@@ -51,103 +51,12 @@
 
 form
 {   width: 100px;
-    
     float: center;
     margin-right: 300px;
     padding: 5px;
- }
-
-  #Trainstart{margin: 5px;}
-  
-  #Trainend{margin: 5px;}
-        
+ }     
 
   #submit{margin-left: 50px;margin-top: 10px;}
- ul#navmenu, ul.sub1 {
- list-style-type: none;
-     margin-top: 5px;
- }
-
-
-
-ul#navmenu li {
- width: 125px;
- text-align: center;
- position: relative;
- float: right;
- margin-right: 86px;
-    
-    
-}
-
-ul#navmenu a {
-    
-    text-decoration: none;
-    display: block;
-    width: 200px;
-    height: 22px;
-    line-height: 22px;
-    background-color: #10B846;
-    border: 1px solid green;
-    color: white;
-    margin-top: 6px;
-    
-    
-}
- 
-
-ul#navmenu ul.sub1 {
-    display: none;
-    position: absolute;
-    top: 26px;
-    left: -40px;    
-    
-}
-
-ul#navmenu li:hover .sub1 {
-    display:block;
-      
-}
-
-ul#navmenu .sub1 li:hover .sub2 {
-    display: block;
-}
-
-
-ul#menu
-{
-   text-decoration: none;
-    display: block;
-    width: 155px;
-    height: 30px;
-    line-height: 25px;
-    background-color: white;
-    border: 1px solid;
-    margin-left: 20px;
-    
-}
-       
-
-ul#moi
-{
-   float: center;
-    margin-left: 0px;
-    margin-top: 65px;
-    margin-right: 220px;
-    padding: 24px;
-    background-color:antiquewhite
-    
-    
-}
-   
-    footer
-{
-    width: 100%;
-    background-color: grey;
-    padding: 60px 0px;
-    margin-top: -500px;
-    border-bottom: 4px solid black;
-}
 
 button
 {
@@ -159,31 +68,14 @@ asp #lblmessage{
    padding: 40px;
    width: 500px;
    float:center;}
+
+
 	</style>
 	</head>
 	<body>
 		
 		<div class="container">
-        <!--<nav>
-        
-        <ul id="navmenu"><li><a href="#">Train</a>
-                    <ul class="sub1">
-                        <li><a href="#"> IC 8 </a></li>
-                        <li><a href="#"> IC 9</a></li>
-                        <li><a href="#"> IC 11</a></li>
-                        <li><a href ="#"> IC 14</a></li>
-                        <li><a href="#"> Commuter Train 1</a></li>
-                        <li><a href="#"> Commuter Train 2</a></li>
-                        <li><a href="#"> Commuter Train 3</a></li>
-                        <li><a href="#"> Commuter Train 4</a></li>
-                        <li><a href="#"> IC 157</a></li>
-                        <li><a href="#"> IC 233</a></li>
-                        
-                     </ul>
-                 </li>
-          </ul>
-             
-        </nav>-->
+       
 
         <h1> Train Service</h1>
         <form id="trainselect" runat="server" method="post" action="_64.aspx"> 
