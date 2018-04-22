@@ -68,6 +68,13 @@ asp #lblmessage{
    padding: 40px;
    width: 500px;
    float:center;}
+table {
+    border-collapse: collapse;
+}
+
+table, td, t {
+    border: 1px solid black;
+}
 
 
 	</style>
