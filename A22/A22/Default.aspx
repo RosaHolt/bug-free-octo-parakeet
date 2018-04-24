@@ -14,80 +14,59 @@
 	<title> Trainwrecker </title>
     
     <style>
-    body
-    {
-    
-    margin: 0;
-    padding: 0;
-    background-image: url(https://images.unsplash.com/photo-1506818144585-74b29c980d4b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6fcc448f1c3bf2c4fac6ae51ae7b981c&auto=format&fit=crop&w=1350&q=80);
-    background-size: cover;
-    font-family: sans-serif;
-    
-    }
-
-   
-    h1{
-    text-align:center;
-    text-transform:uppercase;
-    font-size:27px;
-    color: #3CB371;
-    }
-
+   h1{
+      text-align:center;
+      text-transform:uppercase;
+      font-size:27px;
+      color: #3CB371;
+      }
     #trainselct
-    {margin-left: 30px;}
-    h5
-    {text-align:center;}        
-
-   
-
-    .container
-    {
-    width: 540px;
-    height: 450px;
-    background: #fff;
-    margin:  0 auto;
-    border: 4px solid black;
-    border-style:inset;
-    box-shadow: 0 15px 40px rgba(0,0,0.5);
-    margin-top: 10%;
-   
-    }
-
-
-form
-{
-    float: center;
-    padding: 7%;
-    width: 40%;
-    margin-left: 30%;
-    margin-right: 30%;
-    margin-top: 8%;
-    border: 2px solid black;
-    text-align: center;
-    background-color: #3CB371;
- }     
-
-  #submit{
-   margin-right: 20%;
-   margin-top: 10%;
-  }
-   
-}
-asp #lblmessage{
-   margin: 30px;
-   padding: 40px;
-   width: 500px;
-   float:center;
-
-}
-img {
-    float:center;
-    margin-left:35%;
-    margin-right:35%;
-    height:23%;
-    width:23%;
-}
-
+     {margin-left: 30px;}
+     h5
+    {text-align:center;}  
+     .container
+      {width: 540px;
+      height: 450px;
+      background: #fff;
+      margin:  0 auto;
+      border: 4px solid black;
+      border-style:inset;
+      box-shadow: 0 15px 40px rgba(0,0,0.5);
+      margin-top: 10%;
+     
+      }
+      form
+      {
+      float: center; 
+      padding: 7%;
+       width: 40%;
+      margin-left: 30%;
+      margin-right: 30%;
+      margin-top: 8%;
+      border: 2px solid black;
+      text-align: center;
+      background-color: #3CB371;
+         }  
+       #submit{
+        margin-right: 20%;
+        margin-top: 10%;
+         }
+       asp #lblmessage
+        {
+        margin: 30px;
+        padding: 40px;
+        width: 500px;
+        float:center;
+        }
+        img {
+        float:center;
+         margin-left:35%;
+        margin-right:35%;
+        height:23%;
+         width:23%;
+         } 
+            
+  
 table {
     border-collapse: collapse;
 }
@@ -105,11 +84,10 @@ table, td, t {
        
 
         <h1> Train Service</h1>
-
             <div><img src="juna.jpg.png" alt="train.jpg>"</div>
-
+ +
         <form id="trainselect" runat="server" method="post" action="_64.aspx"> 
-         Choose Train:
+        Choose Train:
         <select name="Choice" class="selectpicker"> 
     
                         
@@ -176,6 +154,7 @@ table, td, t {
                         <asp:Button ID="submit" runat="server" Text="Enter" Onclick="submit_Click" />
 					</div>
                  </div>
+                
 
 			</form>
              <asp:Label ID="lblmessage" runat="server" >

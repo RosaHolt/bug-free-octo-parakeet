@@ -9,6 +9,7 @@
 <head runat="server">
 	<title>_64</title>
     <style>
+
     table {border-collapse: collapse;}
 
     table, td, tr {border: 1px solid black;}
@@ -25,6 +26,7 @@
 </head>
 <body>
 	<form id="form1" runat="server">
+    <button> <a href="Default.aspx"> BACK </a></button>
             <table>
                 <tr>
                     <th>Train Station</th>
@@ -34,7 +36,31 @@
 	<% 
        string inde = Request.Form["Choice"];
 
+           /* StringWiter writer = new StringWriter();
+            WebRequest myRequest1 = WebRequest.Create(@"https://rata.digitraffic.fi/api/v1/metadata/stations");
+            WebResponse response1 = myRequest1.GetResponse();
+            Stream dataStream = response1.GetResponseStream();
+            StreamReader reader = new StreamReader(dataStream);
+            string responseFromServer = reader.ReadToEnd();
+            string [] cutfull = responseFromServer.Split('{');
+            List<string> fullCode = new List<string> ();
 
+            for (int i=0; i<cutfull.Length; i++)
+                {
+                    if (cutfull[i].Contains("stationName"))
+                    {
+                        fullCode.Add(cutfull[i]);
+                    }
+                }
+            List<string> trainFull = new List<string>();
+            for (int i=1; i<cutfull.length;i++)
+                {
+                    int index8 = cutfull[i].IndexOf("stationName")+14;
+                    int take8 = cutfull[i].IndexOf(",",index8)-index8-1;
+                    string full = cutfull[i].Substring(index8,take8);
+                    trainFull.Add(full);
+                
+                }*/
 
       
             StringWriter writer = new StringWriter();
@@ -118,7 +144,8 @@
                  Response.Write(timeTable[i]);
             }
                %>
-    </table>    
+    </table>   
+            
 	</form>
 </body>
 </html>
